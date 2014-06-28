@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/require.js"></script>
+<!--Load javascript libraries by require js-->
+<script>
+    require(['js/config'], function(config) {
+        require(['app/common']);
+    });
+</script>
+<body>
+<div class="header-container">
+    <header class="wrapper clearfix">
+        <h1 class="title">h1.title</h1>
+        <nav>
+            <ul>
+                <li><a href="#">nav ul li a</a></li>
+                <li><a href="#">nav ul li a</a></li>
+                <li><a href="#">nav ul li a</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="main-container">
+    <div class="main wrapper clearfix">
+        <article>
+            <header>
+                <h1>FV Image Gallery</h1>
+            </header>
+            <section>
+                <!--gallery images container-->
+                <div id="gallery-thumbs"></div>
+                <!--full size images container-->
+                <div id="gallery-fullsize-outer-block"></div>
+            </section>
+            <footer>
+            </footer>
+        </article>
+    </div> <!-- #main -->
+</div> <!-- #main-container -->
+<div class="footer-container">
+    <footer class="wrapper">
+        <h3>footer</h3>
+    </footer>
+</div>
+
+<!-- Templates -->
+<!--Galery thumbnail template-->
+<script type="text/template" id="galery-thumbnail-template">
+    <a href="<%= fullUrl %>"><img src="<%= thumbUrl %>" alt="<%= title %>"/></a>
+</script>
+
+<!--Galery full size image template-->
+<script type="text/template" id="gallery-fullSize-template">
+    <div class="galery-fullsize-background"></div>
+    <div class="gallery-fullsize-inner-block">
+        <div class="controls">
+            <button class="btn-control" id="btn-close">X</button>
+            <button class="btn-control" id="btn-back"></button>
+            <button class="btn-control" id="btn-forward"></button>
+        </div>
+        <img src="<%= fullUrl %>" class="gallery-fullsize-image"/>
+    </div>
+</script>
+</body>
+</html>
