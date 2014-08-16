@@ -1,4 +1,6 @@
-FVGallery dynamic photogallery module
+FVGallery - dynamic photogallery module
+
+Url: 
 
 Author:
 Veriaiskiy Fedor
@@ -7,7 +9,7 @@ Date:
 2013-10-15
 
 Description:
-prototype of dynamic photogallery module, based on Backbone.js framework and AMD-modules structure.
+Dynamic photogallery module, based on Backbone.js framework and AMD-modules structure.
 
 Module functionality:
 - 10 images-previews on a page, showed as gallery thumbnails,
