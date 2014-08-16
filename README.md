@@ -1,6 +1,7 @@
 FVGallery - dynamic photogallery module
 
-Url: 
+URL:
+http://fv-gallery.z265871.infobox.ru
 
 Author:
 Veriaiskiy Fedor
